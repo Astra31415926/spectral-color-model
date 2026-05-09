@@ -26,7 +26,7 @@ A custom scanner isolates R, G, and B channels by applying inverse normalization
 
 ## Channel Isolation & Stress Testing
 Verification of the model's robustness under different spectral conditions.
-![Channel Separation](channel_separation_01.jpg)
+![Channel Isolation](channel_separation_01.jpg)
 *Isolated R, G, and B responses as seen by the algorithm.*
 
 ![Stress Test](red_light_test_01.jpg)
@@ -35,4 +35,4 @@ Verification of the model's robustness under different spectral conditions.
 ## Links & Resources
 - **Interactive Demo:** [QR.G.B.-ART](https://astra31415926.github.io/)
 - **Full Preprint (Math):** [Zenodo — SCI Universal Model v1.3.0](https://zenodo.org/records/10633526)
-- **Author:** [Mihail Kashkarov](https://news.ycombinator.com/user?id=MihailKashkarov) — Spectral Design & Science Art.
+- **Author:** [Mihail Kashkarov](https://github.com/Astra31415926) — Spectral Design & Science Art.
