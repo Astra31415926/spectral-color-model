@@ -47,5 +47,17 @@ Each matrix is architected for physical reconstruction through spectral pigment 
   <img src="scanner_interface_02.png" width="120" />
   <img src="scanner_interface_03.png" width="120" />
   <img src="scanner_interface_04.png" width="120" />
+  <img src="scanner_interface_05.png" width="120" />
+  <img src="scanner_interface_06.png" width="120" />
+  <img src="scanner_interface_07.png" width="120" />
+  <img src="scanner_interface_08.png" width="120" />
+  <img src="scanner_interface_09.png" width="120" />
+  <img src="scanner_interface_10.png" width="120" />
+  <img src="scanner_interface_11.png" width="120" />
+  <img src="scanner_interface_12.png" width="120" />
+  <img src="scanner_interface_13.png" width="120" />
+  <img src="scanner_interface_14.png" width="120" />
+  <img src="scanner_interface_15.png" width="120" />
+  <img src="scanner_interface_016.png" width="120" />
+  <img src="scanner_interface_017.png" width="120" />
 </p>
-* [📄 Technical Specifications](Technical_Specs.pdf)
