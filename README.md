@@ -35,7 +35,7 @@ Instead of fixing "dirty" data after scanning, SCI ensures **data integrity duri
   <img src="RGB%20Matrix%20008.png" width="120" />
 </p>
 
-### 2. Ornamental QR Evolution
+### 2. Ornamental QR Evolution (Batch 00-30)
 <p align="left">
   <img src="ornamental_qr_00.png" width="100" />
   <img src="ornamental_qr_01.png" width="100" />
@@ -43,6 +43,31 @@ Instead of fixing "dirty" data after scanning, SCI ensures **data integrity duri
   <img src="ornamental_qr_03.png" width="100" />
   <img src="ornamental_qr_04.png" width="100" />
   <img src="ornamental_qr_05.png" width="100" />
+  <img src="ornamental_qr_06.png" width="100" />
+  <img src="ornamental_qr_07.png" width="100" />
+  <img src="ornamental_qr_08.png" width="100" />
+  <img src="ornamental_qr_09.png" width="100" />
+  <img src="ornamental_qr_10.png" width="100" />
+  <img src="ornamental_qr_11.png" width="100" />
+  <img src="ornamental_qr_12.png" width="100" />
+  <img src="ornamental_qr_13.png" width="100" />
+  <img src="ornamental_qr_14.png" width="100" />
+  <img src="ornamental_qr_15.png" width="100" />
+  <img src="ornamental_qr_16.png" width="100" />
+  <img src="ornamental_qr_17.png" width="100" />
+  <img src="ornamental_qr_18.png" width="100" />
+  <img src="ornamental_qr_19.png" width="100" />
+  <img src="ornamental_qr_20.png" width="100" />
+  <img src="ornamental_qr_21.png" width="100" />
+  <img src="ornamental_qr_22.png" width="100" />
+  <img src="ornamental_qr_23.png" width="100" />
+  <img src="ornamental_qr_24.png" width="100" />
+  <img src="ornamental_qr_25.png" width="100" />
+  <img src="ornamental_qr_26.png" width="100" />
+  <img src="ornamental_qr_27.png" width="100" />
+  <img src="ornamental_qr_28.png" width="100" />
+  <img src="ornamental_qr_29.png" width="100" />
+  <img src="ornamental_qr_30.png" width="100" />
 </p>
 
 ### 3. Physical Artwork Implementation
@@ -50,7 +75,11 @@ Instead of fixing "dirty" data after scanning, SCI ensures **data integrity duri
   <img src="physical_artwork_01.jpeg" width="200" />
   <img src="physical_artwork_03.png" width="200" />
   <img src="physical_artwork_04.jpeg" width="200" />
+  <img src="physical_artwork_05.jpeg" width="200" />
+  <img src="physical_artwork_06.jpeg" width="200" />
+  <img src="physical_artwork_07.jpeg" width="200" />
   <img src="physical_artwork_08.png" width="200" />
+  <img src="physical_artwork_09.jpeg" width="200" />
 </p>
 
 ### 4. Scanner Interface Analysis
@@ -59,6 +88,19 @@ Instead of fixing "dirty" data after scanning, SCI ensures **data integrity duri
   <img src="scanner_interface_02.png" width="120" />
   <img src="scanner_interface_03.png" width="120" />
   <img src="scanner_interface_04.png" width="120" />
+  <img src="scanner_interface_05.png" width="120" />
+  <img src="scanner_interface_06.png" width="120" />
+  <img src="scanner_interface_07.png" width="120" />
+  <img src="scanner_interface_08.png" width="120" />
+  <img src="scanner_interface_09.png" width="120" />
+  <img src="scanner_interface_10.png" width="120" />
+  <img src="scanner_interface_11.png" width="120" />
+  <img src="scanner_interface_12.png" width="120" />
+  <img src="scanner_interface_13.png" width="120" />
+  <img src="scanner_interface_14.png" width="120" />
+  <img src="scanner_interface_15.png" width="120" />
+  <img src="scanner_interface_016.png" width="120" />
+  <img src="scanner_interface_017.png" width="120" />
 </p>
 
 ---
