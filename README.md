@@ -34,11 +34,16 @@ Each matrix is architected for physical reconstruction through spectral pigment 
   <img src="ornamental_qr_12.png" width="100" />
 </p>
 
-### 3. Physical Artworks & Synthesis
+### 3. Physical Artwork Implementation
 <p align="left">
-  <img src="physical_artwork_01.jpeg" width="180" />
-  <img src="physical_artwork_04.jpeg" width="180" />
-  <img src="model_synthesis_01.jpg" width="180" />
+  <img src="physical_artwork_01.jpeg" width="200" />
+  <img src="physical_artwork_03.png" width="200" />
+  <img src="physical_artwork_04.jpeg" width="200" />
+  <img src="physical_artwork_05.jpeg" width="200" />
+  <img src="physical_artwork_06.jpeg" width="200" />
+  <img src="physical_artwork_07.jpeg" width="200" />
+  <img src="physical_artwork_08.png" width="200" />
+  <img src="physical_artwork_09.jpeg" width="200" />
 </p>
 
 ### 4. Scanner Interface Analysis
