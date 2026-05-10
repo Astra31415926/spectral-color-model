@@ -1,44 +1,61 @@
-# Spectral Channel Integrity (SCI): Deterministic Color Channel Separation
+Technology that Preserves the Structure of Color Channels in Print
+Problem
+On a screen, it's simple: red, green, and blue channels do not interfere with each other. Each pixel glows independently.
 
-**A model for maintaining the independence of RGB data channels on physical media.**
+On paper or canvas, it's different. Pigments cannot be "purely red" or "purely blue." Each has broad "tails" of reflection and absorption. Red pigment always reflects a little bit of green, and blue reflects red.
 
-## The Problem: Spectral Crosstalk
-In digital systems, RGB channels are perfectly isolated. Each pixel emits light independently, allowing for seamless data stream separation. However, when transitioning to physical media (print, painting), this independence collapses.
+This is called spectral crosstalk. Data from one channel "pollutes" the other.
 
-Physical objects reflect light rather than emit it. Pigments do not operate in clean spectral bands—they possess broad reflection and absorption "tails." A red pigment will inevitably reflect some green light, and blue will bleed into red. This is known as **spectral crosstalk**, which corrupts the data structure.
+Solution
+The model eliminates inter-channel interference (crosstalk), allowing color channels to maintain independence in a subtractive environment.
 
-## The Solution
-The SCI model eliminates inter-channel interference, allowing color channels to maintain their functional independence in a subtractive environment.
+How it Works
+Core principle: Equilibrium by the weakest link.
 
-### Core Principle: Equilibrium by the Weakest Link
-Pigments differ in the strength of their spectral response. The "weakest" component in the system is typically a complex **Violet**. This pigment becomes the **Spectral Limiter** for the entire system.
+Pigments are not equal in spectral response strength. The "weakest" is a complex Violet. It becomes the spectral limiter of the entire system.
 
-The entire palette is calibrated to stay within the physical limits of this Violet anchor. The system becomes tonally constrained, but gains a crucial property: **Operational Separability**. Channels can be decoded at the physics level—via narrow-band light or optical filters—without relying on software "guesswork" or ML post-processing.
+The entire palette is calibrated so as not to exceed the limits of this Violet. The system becomes tonally limited, but acquires a key property:
 
-## The Experiment
-To eliminate bias toward specific printers or ink types, the model was tested using **acrylic paint on canvas**:
-1. **Reference Swatch:** Created a deterministic swatch where R, G, and B patches showed clear isolation under narrow-band RGB light.
-2. **Calibration:** Established reference levels based on the spectral response of the anchor pigment.
-3. **Physical Matrix:** A multi-channel color QR code was manually painted as a test medium.
-4. **Scanner Interface:** Developed a real-time analysis tool to observe how the camera sensor perceives channel interaction.
+Channels become operationally separable. They can be decoded at the level of physics—through light or filters—without software "guesswork."
 
-### Key Finding
-The experiment demonstrated that while camera sensors introduce their own software-level color distortions, the fundamental problem is solvable at the **model level**. The focus is not on a "special decoding algorithm," but on a **color model** that ensures channel separation *before* the camera even captures the image.
+Experiment
+To exclude bias toward a specific printer or type of ink, I worked with acrylic paint on canvas.
 
-## Applications (Beyond QR)
-While multi-channel color codes (tripling data density) are the most obvious use case, the principle is universal:
-* **Ornamental Encoding (QRnament, Batch 00-30):** Embedding data into aesthetically complex patterns.
-* **Spectral Art:** Physical objects that change behavior/content under different spectral lighting (the origin of this research).
-* **Spectral Steganography:** Hidden data channels, invisible to the eye but readable by instruments.
+Created a reference swatch with a deterministic response—three color spots (R, G, B) clearly separated under narrow-band RGB light.
 
-## Limitations
-This is an experimental technique. It requires calibration for specific pigments (specifically the spectral response of the violet anchor). However, the method itself is universal: any medium that can be described by a spectral curve can be normalized using this principle.
+Calibrated the system—selected reference levels and the spectral limiter.
 
-## Resources
-* **Theory (Zenodo):** [Preprint: Spectral Channel Integrity](https://zenodo.org/records/19633526)
-* **Generator #1:** [QR.G.B.-ART (Artistic QR)](https://astra31415926.github.io/QR.G.B.-ART/)
-* **Generator #2:** [QRnament2 (Ornamental)](https://astra31415926.github.io/QRnament2/)
-* **Project Portfolio:** [Spectral Design & Art](https://astra31415926.github.io/#contacts)
+Painted a color QR code on canvas with the correct colors (as a test medium).
+
+Developed a scanner that shows what the camera sensor sees and allows real-time control over channel interference.
+
+What the Experiment Showed
+The reference swatch became an indicator for adjusting the scanner. I saw that the camera itself (at the software level) distorts colors. I was unable to overcome this distortion at the software level.
+
+But the main conclusion: the problem is solved at the model level. The scanner is just a tool for observation; it can be improved. The focus is not on a "special decoding algorithm," but on a color model that makes channels separable before the camera even looks at them.
+
+Where to Apply (Not Only QR)
+The most obvious example is multi-channel color codes, where information is stored on three independent channels. But there are more possibilities:
+
+Ornamental Codes (QRnament, Batch 00-30): Embedding data into aesthetically complex patterns.
+
+Light-Sensitive Painting: Physical objects that change behavior under different spectral light. This is where it all began.
+
+Spectral Steganography: Hidden channels, invisible to the eye but readable instrumentally.
+
+Limitations
+This is an experimental technique. It requires calibration for specific pigments (specifically the spectral response of violet).
+
+However, the method itself is universal: it is not tied to a specific printer, ink, or scanner. Any medium that can be described by a spectral curve can be normalized using this principle.
+
+Resources
+Theory (Zenodo): Preprint: Spectral Channel Integrity
+
+Generator #1 (Art-QR): QR.G.B.-ART
+
+Generator #2 (Ornaments): QRnament2
+
+Project Portfolio: https://astra31415926.github.io/#contacts
 
 ---
 
