@@ -1,23 +1,44 @@
-# Spectral Channel Integrity (SCI) — Deterministic RGB Normalization
+# Spectral Channel Integrity (SCI): Deterministic Color Channel Separation
 
-**Physical/Operational separation of independent data channels on reflective media.**
-
-This project introduces a deterministic model for reducing **spectral crosstalk** in multi-channel physical printing. The method was derived from "Spectral Design" (RGB-responsive acrylic painting) to solve the problem of signal leakage between pigments under narrow-band light.
+**A model for maintaining the independence of RGB data channels on physical media.**
 
 ## The Problem: Spectral Crosstalk
-In digital environments, R, G, and B channels are discrete. On physical substrates, pigments have broad absorption spectra. Data intended for the Blue channel inevitably "pollutes" the Green channel. Standard approaches (CMYK) rely on software post-processing and ML to "guess" the data, which limits density and reliability.
+In digital systems, RGB channels are perfectly isolated. Each pixel emits light independently, allowing for seamless data stream separation. However, when transitioning to physical media (print, painting), this independence collapses.
 
-## The Solution: Physical "Shift Left"
-Instead of fixing "dirty" data after scanning, SCI ensures **data integrity during formation (printing)**.
+Physical objects reflect light rather than emit it. Pigments do not operate in clean spectral bands—they possess broad reflection and absorption "tails." A red pigment will inevitably reflect some green light, and blue will bleed into red. This is known as **spectral crosstalk**, which corrupts the data structure.
 
-*   **Key Insight:** Using the "weakest" pigment (e.g., Violet acrylic) as a **Spectral Limiter** and tonal anchor.
-*   **Normalization:** The entire palette is mathematically normalized against the physical reflection/absorption limits of the anchor pigment under narrow-band RGB light.
-*   **Result:** Physical pigments behave like digital pixels. Channels are separated **operationally** (via light or filters) at the hardware level.
+## The Solution
+The SCI model eliminates inter-channel interference, allowing color channels to maintain their functional independence in a subtractive environment.
 
-## Live Demos & Theory
-*   **Theory (Zenodo):** [Spectral Channel Integrity Preprint](https://zenodo.org/records/19633526)
-*   **Artistic QR Gen:** [QR.G.B.-ART](https://astra31415926.github.io/QR.G.B.-ART/)
-*   **Ornamental QR Gen:** [QRnament2](https://astra31415926.github.io/QRnament2/)
+### Core Principle: Equilibrium by the Weakest Link
+Pigments differ in the strength of their spectral response. The "weakest" component in the system is typically a complex **Violet**. This pigment becomes the **Spectral Limiter** for the entire system.
+
+The entire palette is calibrated to stay within the physical limits of this Violet anchor. The system becomes tonally constrained, but gains a crucial property: **Operational Separability**. Channels can be decoded at the physics level—via narrow-band light or optical filters—without relying on software "guesswork" or ML post-processing.
+
+## The Experiment
+To eliminate bias toward specific printers or ink types, the model was tested using **acrylic paint on canvas**:
+1. **Reference Swatch:** Created a deterministic swatch where R, G, and B patches showed clear isolation under narrow-band RGB light.
+2. **Calibration:** Established reference levels based on the spectral response of the anchor pigment.
+3. **Physical Matrix:** A multi-channel color QR code was manually painted as a test medium.
+4. **Scanner Interface:** Developed a real-time analysis tool to observe how the camera sensor perceives channel interaction.
+
+### Key Finding
+The experiment demonstrated that while camera sensors introduce their own software-level color distortions, the fundamental problem is solvable at the **model level**. The focus is not on a "special decoding algorithm," but on a **color model** that ensures channel separation *before* the camera even captures the image.
+
+## Applications (Beyond QR)
+While multi-channel color codes (tripling data density) are the most obvious use case, the principle is universal:
+* **Ornamental Encoding (QRnament, Batch 00-30):** Embedding data into aesthetically complex patterns.
+* **Spectral Art:** Physical objects that change behavior/content under different spectral lighting (the origin of this research).
+* **Spectral Steganography:** Hidden data channels, invisible to the eye but readable by instruments.
+
+## Limitations
+This is an experimental technique. It requires calibration for specific pigments (specifically the spectral response of the violet anchor). However, the method itself is universal: any medium that can be described by a spectral curve can be normalized using this principle.
+
+## Resources
+* **Theory (Zenodo):** [Preprint: Spectral Channel Integrity](https://zenodo.org/records/19633526)
+* **Generator #1:** [QR.G.B.-ART (Artistic QR)](https://astra31415926.github.io/QR.G.B.-ART/)
+* **Generator #2:** [QRnament2 (Ornamental)](https://astra31415926.github.io/QRnament2/)
+* **Project Portfolio:** [Spectral Design & Art](https://astra31415926.github.io/#contacts)
 
 ---
 
@@ -104,4 +125,4 @@ Instead of fixing "dirty" data after scanning, SCI ensures **data integrity duri
 </p>
 
 ---
-**Author:** Mihail Kashkarov — Science Art, Spectral Channel Integrity.
+**Author:** Mihail Kashkarov
